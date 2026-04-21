@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { Play } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Hero = () => {
   const { scrollY } = useScroll();
@@ -44,9 +45,9 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto mt-4">
-            <a href="/checkout" className="px-10 py-5 rounded-full font-bold text-sm tracking-wider uppercase text-white btn-glow animate-pulse-glow hover:scale-105 transition-transform duration-300 flex items-center justify-center">
+            <Link to="/checkout" className="px-10 py-5 rounded-full font-bold text-sm tracking-wider uppercase text-white btn-glow animate-pulse-glow hover:scale-105 transition-transform duration-300 flex items-center justify-center">
               Shop Now
-            </a>
+            </Link>
             <button className="px-10 py-5 rounded-full font-bold text-sm tracking-wider uppercase text-white bg-glass border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all duration-300 flex items-center justify-center gap-3">
               Watch Demo <Play className="w-4 h-4 fill-current" />
             </button>

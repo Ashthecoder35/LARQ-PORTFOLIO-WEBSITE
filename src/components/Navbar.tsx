@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -23,9 +24,9 @@ export const Navbar = () => {
           <a href="#faqs" className="hover:text-white transition-colors">FAQs</a>
         </div>
         <div className="flex items-center gap-4">
-          <a href="/checkout" className="hidden md:flex items-center justify-center gap-2 px-8 py-3 rounded-full font-bold text-sm uppercase tracking-wider text-white btn-glow transition-all hover:scale-105">
+          <Link to="/checkout" className="hidden md:flex items-center justify-center gap-2 px-8 py-3 rounded-full font-bold text-sm uppercase tracking-wider text-white btn-glow transition-all hover:scale-105">
             Shop Now
-          </a>
+          </Link>
           <button className="text-white md:hidden">
             <Menu className="w-6 h-6" />
           </button>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -10,9 +11,9 @@ export const Footer = () => {
           <span className="gradient-text-accent text-glow">Hydration.</span>
         </h2>
         <div className="flex flex-col sm:flex-row gap-6 justify-center mb-32 w-full max-w-lg mx-auto">
-          <a href="/checkout" className="flex-1 py-5 rounded-full font-bold text-sm tracking-[0.1em] uppercase text-white btn-glow animate-pulse-glow hover:scale-[1.03] transition-transform duration-300 cursor-pointer flex justify-center items-center">
+          <Link to="/checkout" className="flex-1 py-5 rounded-full font-bold text-sm tracking-[0.1em] uppercase text-white btn-glow animate-pulse-glow hover:scale-[1.03] transition-transform duration-300 cursor-pointer flex justify-center items-center">
             Shop Now
-          </a>
+          </Link>
           <button className="flex-1 py-5 rounded-full font-bold text-sm tracking-[0.1em] uppercase text-white border-glow bg-glass hover:bg-white/5 transition-all duration-300 cursor-pointer">
             Explore Colors
           </button>

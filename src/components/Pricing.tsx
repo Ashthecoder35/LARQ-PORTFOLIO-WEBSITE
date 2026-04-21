@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Check } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Pricing = () => {
   return (
@@ -38,9 +39,9 @@ export const Pricing = () => {
             <div className="flex items-center gap-2 justify-center"><Check className="text-electric w-4 h-4"/> <span className="text-sm text-white/80">30-Day Returns</span></div>
           </div>
 
-          <a href="/checkout" className="w-full max-w-sm py-5 rounded-full font-bold text-sm tracking-[0.1em] uppercase text-white btn-glow animate-pulse-glow hover:scale-[1.02] transition-transform duration-300 flex justify-center items-center">
+          <Link to="/checkout" className="w-full max-w-sm py-5 rounded-full font-bold text-sm tracking-[0.1em] uppercase text-white btn-glow animate-pulse-glow hover:scale-[1.02] transition-transform duration-300 flex justify-center items-center">
             Buy Now
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
